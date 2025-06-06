@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Gladstone - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer</p>
+            <h1>Hi, I'm <span>Prem</span><br>Gladstone Kanaparthi</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Detail oriented and results driven computer science professional with over two years of industry experience specializing in data engineering analytics and machine learning system development. Demonstrated expertise in architecting scalable data pipelines transforming raw data into meaningful insights and deploying end to end ML workflows across cloud platforms. Strong foundation in data modeling database design and distributed processing using tools such as Snowflake PostgreSQL Airflow and DBT. Proficient in Python and SQL for data transformation analytics automation and ML integration. Adept at leveraging cloud platforms like AWS for deploying robust scalable systems with CI CD and monitoring frameworks. Committed to solving complex data challenges by simplifying workflows enabling data driven decisions and contributing to enterprise wide data strategy in fast paced FinTech and analytics environments.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, SQL, Java, C, C++, JavaScript, React, Bash, R</li>
+                        <li><span>Data Engineering and Analytics Stack</span><br>Snowflake, PostgreSQL, Airflow, DBT, GitLab</li>
+                        <li><span>ML Frameworks</span><br>PyTorch, TensorFlow, Keras, Scikit learn, Hugging Face Transformers</li>
+                        <li><span>Transformer Models</span><br>XLNet, T5, ELECTRA, BERT</li>
+                        <li><span>Model Optimization Tools</span><br>ONNX, TorchScript, quantization, pruning, batch inference</li>
+                        <li><span>Model Lifecycle and MLOps</span><br>MLflow, SageMaker, GitHub Actions, GitLab CI CD, Jenkins</li>
+                        <li><span>Web and API Frameworks</span><br>Flask, Django, FastAPI, RESTful API, Swagger, Postman</li>
+                        <li><span>Cloud and Infrastructure</span><br>AWS, EC2, S3, RDS, Lambda, Kubernetes, Docker, GCP, Redshift</li>
+                        <li><span>Monitoring and Benchmarking</span><br>TensorBoard, Seaborn, Matplotlib, Plotly, Jupyter</li>
+                        <li><span>Databases</span><br>Snowflake, PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, DB2</li>
+                        <li><span>Softwares and Tools</span><br>Microsoft Office, Tableau, Jira, Confluence</li>
+                        <li><span>Soft Skills</span><br>Problem solving, analytical thinking, strategic planning, communication</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - 2023</span><br>Data Engineer at L&T MINDTREE</li>
+                        <li><span>2021 - 2021</span><br>Machine Learning Trainee at GNV IT solutions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2025</span><br>Masters in Computer Science - University of North Texas (3.636/4 CGPA)</li>
+                        <li><span>2018 - 2022</span><br>Bachelor of Technology in Computer Science and Engineering - GNA University (7.96/10 CGPA)</li>
+                        <li><span>2021</span><br>Palo Alto Networks Cybersecurity Certification</li>
+                        <li><span>2022</span><br>AWS Certified Cloud Practitioner</li>
+                        <li><span>2022</span><br>Machine Learning (CEMS) Certification</li>
+                        <li><span>2023</span><br>AWS Certified Developer – Associate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Developing, integrating, and maintaining web applications and services using Python (Django) and JavaScript, interfacing with SQL databases for data storage and optimization.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i>
+                <h2>ERP Customization</h2>
+                <p>Upgrading and customizing enterprise resource planning (ERP) modules using the Odoo framework, implementing new features to meet evolving business requirements.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-cloud"></i>
+                <h2>Cloud Solutions</h2>
+                <p>Deploying and orchestrating applications on cloud platforms (AWS, GCP, Azure) using containerization technologies like Docker and Kubernetes, improving scalability and deployment speed.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Liver Disease Prediction</h3>
+                    <p>Used Snowflake and DBT to design and populate curated feature stores, enabling scalable and reliable access to dimensional health data for model development. Engineered complex data transformation workflows using SQL and DBT to clean, normalize, and structure large clinical datasets. Built and compared multiple classification models including Random Forest, SVM, and Logistic Regression to predict liver disease with explainable insights. Automated the end to end ML workflow including model training, parameter tuning, and cross validation benchmarking with performance metrics such as accuracy, F1 score, and ROC AUC. Integrated model scoring pipeline with monitoring to track changes in input distributions and model performance over time</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Fake Profile Identification</h3>
+                    <p>Developed an automated detection system for fraudulent social media profiles using machine learning techniques.
+                        Designed data transformation and enrichment pipeline using DBT and advanced SQL logic to derive behavioral features from raw user activity logs across platforms. Engineered and trained fraud detection models using XGBoost and SVM, leveraging time-based and categorical interaction patterns for higher predictive accuracy. Created RESTful endpoints with FastAPI for serving real-time scoring requests and integrated the backend seamlessly into a React-based admin interface. Ensured scalability and performance by containerizing the solution with Docker and validating low-latency responses under concurrent load scenarios. Added analytics layer with performance dashboards to track prediction volume, false positive rates, and system response times
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>CI CD Enabled RESTful Data API</h3>
+                    <p>Developed modular APIs using Flask to expose ML model endpoints with dynamic routing. Set up GitHub Actions to automate model training testing containerization and deployment to AWS EC2</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> premgladstone1@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9408431006</p>
+                <p><i class="fas fa-map-marker-alt"></i> 3925 N elm street, Denton, Texas 76207</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prem-gladstone-36593b1a5"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Prem Gladstone. Made with <i class="fas fa-heart"></i> by Prem Gladstone</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
